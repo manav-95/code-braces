@@ -1,14 +1,15 @@
 import React from 'react';
 
-import Ex1 from '../assets/hero/ex-1.png'
-import Ex2 from '../assets/hero/ex-2.png'
-import Ex3 from '../assets/hero/ex-3.png'
+
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/effect-fade';
+import Ex1 from '../assets/hero/ex-1.png'
+import Ex2 from '../assets/hero/ex-2.png'
+import Ex3 from '../assets/hero/ex-3.png'
 
 const Hero = () => {
 
@@ -41,7 +42,6 @@ const Hero = () => {
                             centeredSlides={true}
                             allowTouchMove={false}
                             autoplay={{ delay: 5000 }}
-                            
                             loop={true}
                             speed={700}
                             className='w-full h-[260px] sm:h-[420px] md:h-[500px] lg:h-[380px] xl:h-[400px]'>
@@ -51,7 +51,7 @@ const Hero = () => {
                                         key={index}
                                         src={item.image}
                                         alt={item.alt}
-                                        className="w-full h-full object-cover rounded-xl"
+                                        className="w-full h-full object-contain min-[425px]:object-cover rounded-xl"
                                     />
                                 </SwiperSlide>
                             ))}

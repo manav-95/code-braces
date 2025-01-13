@@ -5,8 +5,10 @@ import React from 'react'
 const Layout = () => {
     return (
         <>
-        <Navbar />
-        <Outlet />
+            <div className='mb-14 lg:mb-20'>
+                <Navbar />
+            </div>
+            <Outlet />
         </>
     )
 }
