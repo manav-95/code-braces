@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { NavLink } from 'react-router-dom'
 
@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
           <div>
             <button className='font-semibold text-white uppercase bg-[#7091e6] px-6 py-2.5 rounded-md'>
-              Get in Touch
+              Get Started
             </button>
           </div>
         </div>
